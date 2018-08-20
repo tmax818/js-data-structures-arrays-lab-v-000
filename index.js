@@ -29,3 +29,15 @@ function prependDriver(name) {
   return driversc;
 }
 
+
+function removeLastDriver(name) {
+  let newdrivers = drivers.slice();
+  newdrivers.pop(name);
+  return newdrivers;
+}
+
+function removeFirstDriver(name) {
+  let newdrivers = drivers.slice();
+  newdrivers.shift(name);
+  return newdrivers;
+}
